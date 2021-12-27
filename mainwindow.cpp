@@ -20,7 +20,6 @@ void MainWindow::onClickedRegistration()
 {
     const Worker worker = pageRegistration->execPage();
     if (worker.isValid()) {
-        listWidget->addItem(worker.getPublicInfo());
         QMessageBox::information(this, __FUNCTION__, "Your id: " + worker.id);
     }
 }
