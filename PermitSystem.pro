@@ -9,22 +9,26 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    db/managerdb.cpp \
     main.cpp \
     mainwindow.cpp \
-    managerdb.cpp \
-    pagebase.cpp \
-    pageenter.cpp \
-    pageexit.cpp \
-    pageregistration.cpp
+    pages/pagebase.cpp \
+    pages/pageenter.cpp \
+    pages/pageexit.cpp \
+    pages/pageregistration.cpp
 
 HEADERS += \
+    db/managerdb.h \
     mainwindow.h \
-    managerdb.h \
-    pagebase.h \
-    pageenter.h \
-    pageexit.h \
-    pageregistration.h \
+    pages/pagebase.h \
+    pages/pageenter.h \
+    pages/pageexit.h \
+    pages/pageregistration.h \
     worker.h
+
+INCLUDEPATH += \
+    db \
+    pages
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
