@@ -1,4 +1,4 @@
-## PermitSystem Qt/QSLite
+## PermitSystem Qt/SQLite
 
 ![Screen Shot](md/image_2021-12-28_00-44-12.png)
 
